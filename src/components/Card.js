@@ -4,13 +4,13 @@ import ButtonGroup from "./ButtonGroup";
 import React, { useState } from "react";
 
 function Card() {
-  const [size, setSize] = useState("s");
+  const [size, setSize] = useState({key: 's', dimension: 30});
   const [type, setType] = useState("square");
 
-  const setSmall = () => setSize("s");
-  const setMedium = () => setSize("m");
-  const setLarge = () => setSize("l");
-  const setXl = () => setSize("xl");
+  const setSmall = () => setSize({key: 's', dimension: 30});
+  const setMedium = () => setSize({key: 'm', dimension: 60});
+  const setLarge = () => setSize({key: 'l', dimension: 120});
+  const setXl = () => setSize({key: 'xl', dimension: 200});
 
   const setSquare = () => setType('square')
   const setRound = () => setType('round')

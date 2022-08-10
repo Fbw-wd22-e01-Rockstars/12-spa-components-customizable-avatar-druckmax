@@ -4,7 +4,7 @@ function Avatar(props) {
   return (
     <div className="img_container">
       <img
-        className={`img ${props.size} ${props.type}`}
+        className={`img ${props.size.key} ${props.type}`}
         src={props.src}
         alt="picsum"
       />
